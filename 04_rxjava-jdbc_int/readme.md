@@ -12,4 +12,4 @@
     - developer's repair
        - new QueryContext(db, batchSize, fetchSize);
     - our repair 
-       - new QueryContext(db, batchSize, batchSize);
+       - new QueryContext(db, batchSize, fetchSize);
