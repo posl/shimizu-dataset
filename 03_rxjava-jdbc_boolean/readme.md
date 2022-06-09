@@ -1,11 +1,15 @@
-- 修正箇所
-    1. src/main/java/com/github/davidmoten/rx/jdbc/QuerySelectOnSubscribe.java#108
-        - Util.setParameters(state.ps, parameters);
-    2. src/main/java/com/github/davidmoten/rx/jdbc/QueryUpdateOnSubscribe.java#217
-        - Util.setParameters(state.ps, parameters);
-- 開発者の修正
-    1. Util.setParameters(state.ps, parameters, query.names());
-    2. Util.setParameters(state.ps, parameters, query.names());
-- 提案手法の修正
-    1. Util.setParameters(state.ps, parameters, stateProvided);
-    2. Util.setParameters(state.ps, parameters, false);
+1. src/main/java/com/github/davidmoten/rx/jdbc/QuerySelectOnSubscribe.java#108
+    - before
+       - Util.setParameters(state.ps, parameters);
+    - developer's repair
+       - Util.setParameters(state.ps, parameters, query.names());
+    - our repair 
+       - Util.setParameters(state.ps, parameters, stateProvided);
+
+2. src/main/java/com/github/davidmoten/rx/jdbc/QueryUpdateOnSubscribe.java#217
+    - before
+       - Util.setParameters(state.ps, parameters);
+    - developer's repair
+       - Util.setParameters(state.ps, parameters, query.names());
+    - our repair 
+       - Util.setParameters(state.ps, parameters, false);

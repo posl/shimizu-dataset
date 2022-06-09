@@ -1,13 +1,15 @@
-- 修正箇所
-    1. src/main/java/com/github/davidmoten/rx/jdbc/QueryContext.java#19
-        - this(db, 1);
-    2. src/main/java/com/github/davidmoten/rx/jdbc/QueryContext.java#75
-        - new QueryContext(db, batchSize);
+1. src/main/java/com/github/davidmoten/rx/jdbc/QueryContext.java#19
+    - before
+       - this(db, 1);
+    - developer's repair
+       - this(db, 1, 0);
+    - our repair 
+       - this(db, 1, 0);
 
-- 開発者の修正
-    1. this(db, 1, 0);
-    2. new QueryContext(db, batchSize, fetchSize);
-    
-- 提案手法の修正
-    1. this(db, 1, 0);
-    2. new QueryContext(db, batchSize, batchSize);
+2. src/main/java/com/github/davidmoten/rx/jdbc/QueryContext.java#75
+    - before
+       - new QueryContext(db, batchSize);
+    - developer's repair
+       - new QueryContext(db, batchSize, fetchSize);
+    - our repair 
+       - new QueryContext(db, batchSize, batchSize);
