@@ -10,9 +10,9 @@ Fixed revision: a2320ef3dce20b631d6141f14fe679f409cdcd01
     - developer's repair
        - DirectoryTraversal.protectAgainstInClassPath(resource.getPath(), baseResource);
     - our repair 
-       - DirectoryTraversal.protectAgainstInClassPath(resource.getPath(), baseResource);
+       - DirectoryTraversal.protectAgainstInClassPath(resource.getPath(), welcomeFile);
 
-2. src/main/java/spark/resource/ExternalResourceHandler.java
+2. src/main/java/spark/resource/ExternalResourceHandler.java#82
     - before
        - DirectoryTraversal.protectAgainstInClassPath(resource.getPath());
     - developer's repair
