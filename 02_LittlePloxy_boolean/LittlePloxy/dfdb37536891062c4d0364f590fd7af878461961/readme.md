@@ -1,5 +1,7 @@
 URL: https://github.com/adamfisk/LittleProxy/
+
 Original revision: dfdb37536891062c4d0364f590fd7af878461961
+
 Fixed revision: 4ab98298795ea60bd58205d6551e63f7e14a4034
 
 1. src/main/java/org/littleshoot/proxy/impl/DefaultHttpProxyServer.java#386

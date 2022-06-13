@@ -1,5 +1,7 @@
 URL: https://github.com/perwendel/spark/
+
 Original revision: 5f767420ed43379d2034115513ef4c60567e0868
+
 Fixed revision: a2320ef3dce20b631d6141f14fe679f409cdcd01
 
 1. src/main/java/spark/resource/ClassPathResourceHandler.java#83
