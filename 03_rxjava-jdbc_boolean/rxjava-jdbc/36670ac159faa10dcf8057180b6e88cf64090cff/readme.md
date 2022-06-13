@@ -1,3 +1,7 @@
+URL: https://github.com/davidmoten/rxjava-jdbc/
+Original revision: 36670ac159faa10dcf8057180b6e88cf64090cff
+Fixed revision: 6457a45bf08a1eda4fb0da2c7bc79a7a29c4d3b5
+
 1. src/main/java/com/github/davidmoten/rx/jdbc/QuerySelectOnSubscribe.java#108
     - before
        - Util.setParameters(state.ps, parameters);
