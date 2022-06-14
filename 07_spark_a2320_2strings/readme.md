@@ -14,7 +14,7 @@ Fixed revision: a2320ef3dce20b631d6141f14fe679f409cdcd01
 
 2. src/main/java/spark/resource/ExternalResourceHandler.java#82
     - before
-       - DirectoryTraversal.protectAgainstInClassPath(resource.getPath());
+       - DirectoryTraversal.protectAgainstForExternal(resource.getPath());
     - developer's repair
        - DirectoryTraversal.protectAgainstForExternal(resource.getPath(), baseResource);
     - our repair 
