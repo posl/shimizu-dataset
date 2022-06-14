@@ -18,4 +18,4 @@ Fixed revision: a2320ef3dce20b631d6141f14fe679f409cdcd01
     - developer's repair
        - DirectoryTraversal.protectAgainstForExternal(resource.getPath(), baseResource);
     - our repair 
-       - DirectoryTraversal.protectAgainstInClassPath(resource.getPath(), baseResource);
+       - DirectoryTraversal.protectAgainstForExternal(resource.getPath(), baseResource);
