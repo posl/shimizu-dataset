@@ -1,8 +1,8 @@
 URL: https://github.com/apache/commons-io/
 
-Original revision: 9e2b2c09732ca596331f7ca34ba4e0f03d70093d
+Original revision: https://github.com/apache/commons-io/commit/9e2b2c09732ca596331f7ca34ba4e0f03d70093d
 
-Fixed revision: c5f2e40e7a8234fe48e08d451d3152ba58a03ac6
+Fixed revision: https://github.com/apache/commons-io/commit/c5f2e40e7a8234fe48e08d451d3152ba58a03ac6
 
 1. src/main/java/org/apache/commons/io/output/DeferredFileOutputStream.java#102
    - before
